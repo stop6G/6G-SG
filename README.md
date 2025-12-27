@@ -55,6 +55,34 @@ Simulates a supply-chain style injection on a 6G edge server. The script disguis
 **Concept:** Physical Layer Beam Interception (Man-in-the-Middle)  
 This script executes a "Holographic Beam-Man-in-the-Middle" attack. Because 6G utilizes highly focused Terahertz pencil beams, traditional wireless sniffing is impossible. This code uses quantum LiDAR to track a moving target, fires a precise "anti-phase" beam to create destructive interference (silencing the real signal), and simultaneously inserts a rogue beam to impersonate the device to the tower, effectively physically hijacking the connection.
 
+### `04-MESH_POISON_ROUTE.py`
+**Type:** 🔴 Real Code / Educational  
+**Concept:** Routing Table Contamination (Sybil Attack)  
+6G networks rely on "Mesh" topology, where devices act as relays for one another. This script spins up 50 fake virtual devices ("Sybil nodes") that all advertise themselves as the fastest, highest-bandwidth route to the internet.
+* **Tech Stack:** Uses `scapy` to broadcast fake routing frames and `multiprocessing` to simulate a swarm of 50 distinct nodes simultaneously.
+* **Result:** The victim's traffic is lured away from the legitimate tower and routed through the attacker's machine, enabling packet capture or a Blackhole attack.
+
+### `05-QUANTUM_STATE_DECAY.py`
+**Type:** 🟢 Sci-Fi / Fictional  
+**Concept:** Entropy-Based Key Destruction  
+In this narrative setting, encryption keys are fragile quantum states held in suspended animation. This script doesn't crack the key; it "heats up" the target server's memory controller to induce "Quantum Decoherence." The intense computational load causes the stored keys to rot and fail validation, effectively locking the administrators out of their own system (a permanent Denial of Service).
+
+### `06-THZ_WALL_BREACH.py`
+**Type:** 🔴 Real Code / Educational  
+**Concept:** Through-Wall Imaging (WiFi Sensing)  
+Repurposes standard 6G Terahertz signals, which reflect off human skin, to act as a low-resolution radar. The script pings a target router and measures "Channel State Information" (CSI)—the tiny distortions in the radio wave caused by physical objects.
+* **Tech Stack:** Uses `numpy` for signal processing to generate a matrix representing the room's physical layout.
+* **Result:** Renders a crude ASCII "Heat Map" of where people are standing inside a locked room, bypassing data encryption entirely by analyzing the wave's shape.
+
+### `07-DRONE_HANDOVER_HIJACK.py`
+**Type:** 🔴 Real Code / Educational  
+**Concept:** Forced Tower Handover  
+Exploits the mobile network's need to switch connections ("Handover") as users move. This script floods the victim's device with spoofed telemetry reports claiming the current tower signal is critically weak and a "Rogue Tower" is strong.
+* **Tech Stack:** Uses `scapy` to construct and inject RRC Measurement Reports (Event A3) into the air interface.
+* **Result:** Tricks the network into forcibly disconnecting the victim from the real tower and handing the connection over to the attacker's malicious node.
+
+
+
 ---
 
 ## 🛠️ Dependencies
