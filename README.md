@@ -50,6 +50,11 @@ Simulates a supply-chain style injection on a 6G edge server. The script disguis
 * **Tech Stack:** Uses `hmac` with a "stolen" key to forge a cryptographic signature.
 * **Result:** Tricks the API into deploying malware via a Kubernetes `postStart` command, granting a reverse shell.
 
+### `03-HOLOGRAPHIC_BEAM_MIM.py`
+**Type:** 🟢 Sci-Fi / Fictional  
+**Concept:** Physical Layer Beam Interception (Man-in-the-Middle)  
+This script executes a "Holographic Beam-Man-in-the-Middle" attack. Because 6G utilizes highly focused Terahertz pencil beams, traditional wireless sniffing is impossible. This code uses quantum LiDAR to track a moving target, fires a precise "anti-phase" beam to create destructive interference (silencing the real signal), and simultaneously inserts a rogue beam to impersonate the device to the tower, effectively physically hijacking the connection.
+
 ---
 
 ## 🛠️ Dependencies
