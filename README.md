@@ -12,11 +12,14 @@
 ## 📡 About The Project
 **6G Signal Guillotine** is a collection of realistic and fictional sci-fi Python scripts simulating future 6G network attacks. As we move towards Terahertz frequencies and AI-managed networks, the threat landscape shifts from standard exploits to adversarial machine learning and Zero Trust bypasses.
 
-This repo covers:
-* Adversarial AI & Model Poisoning
-* Zero Trust & Single Packet Authorization (SPA)
-* Edge Computing & Micro-service Injection
-* Post-Quantum Cryptography concepts
+## 📡 Core Capabilities
+
+This repository simulates theoretical 6G attack vectors, blending real-world Python with hard sci-fi narrative concepts. The toolkit focuses on four primary security domains:
+
+* **Adversarial AI & Model Poisoning:** Generating mathematical noise tensors to crash AI-driven beamforming and traffic controllers.
+* **Zero Trust & SPA:** Implementing Single Packet Authorization (SPA) "Ghost Packets" to breach invisible firewalls.
+* **Edge Computing & Micro-service Injection:** Supply-chain attacks targeting the containerized architecture of cell towers.
+* **Post-Quantum Cryptography:** Narrative simulations of entropy decay and key destruction in a post-quantum environment.
 
 _Updated regularly._
 
